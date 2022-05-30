@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>My Little Diary; join</title>
+<title>My Daily Diary; join</title>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="../myDiary.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/myDiary.js"></script>
 </head>
 <body>
 	<section class="vh-100 gradient-custom">
@@ -23,7 +24,7 @@
 								<h2 class="fw-bold mb-2 text-uppercase">JOIN US</h2>
 								<p class="text-black-50 mb-5">회원정보를 입력해주세요!</p>
 
-								<form action="main.jsp" method="post" id="joinForm">
+								<form action="../controller/join.jsp" method="post" id="joinForm">
 									<div class="form-outline form-black mb-4">
 										<label class="form-label" for="idLabel">아이디</label> 
 										<input type="text" id="id" name="id" class="form-control form-control-lg" />
@@ -33,8 +34,13 @@
 										<label class="form-label" for="pwLabel">비밀번호</label> 
 										<input type="password" id="pw" name="pw" class="form-control form-control-lg" />
 									</div>
-
-									<button id="join" class="btn btn-secondary px-5 mt-5" type="submit">가입하기</button>
+									
+									<div class="form-outline form-black mb-4">
+										<label class="form-label" for="pwLabel">비밀번호 확인</label> 
+										<input type="password" id="pwChk" name="pwChk" class="form-control form-control-lg" />
+									</div>
+									
+									<button id="join" class="btn btn-secondary px-5 mt-5" type="button">가입하기</button>
 								</form>
 							</div>
 						</div>

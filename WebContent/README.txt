@@ -30,17 +30,19 @@ create table Diary (
 	date Timestamp,
 	content varchar(3000),
 	foreign key(id) references user(id) on update cascade,
-	primary key(id)
+	primary key(date)
 ); 
 
 [ URL ]
 (1) index.jsp : 로그인 페이지, 회원가입을 할 수 있다
-(2) join.jsp : 회원가입 페이지
-(3) writeForm.jsp : 일기쓰기 페이지
-(4) write.jsp : writeForm.jsp의 동작을 위한 페이지
-(5) main.jsp : 로그인을 하면 보이는 페이지, 캘린더를 클릭하면 이동하는 기능이 있다
-(6) read.jsp : 일기읽기 페이지
-(7) updateForm.jsp: 일기수정 페이지
-(8) update.jsp: updateForm.jsp의 동작을 위한 페이지
-(9) deleteForm.jsp: 일기삭제 페이지
-(10) delete.jsp: deleteForm.jsp의 동작을 위한 페이지
+(2) joinForm.jsp : 회원가입 페이지
+(3) join.jsp : joinForm.jsp의 동작을 위한 페이지
+(4) writeForm.jsp : 일기쓰기 페이지
+(5) write.jsp : writeForm.jsp의 동작을 위한 페이지
+(6) main.jsp : 로그인을 하면 보이는 페이지, 캘린더를 클릭하면 이동하는 기능이 있다
+(7) readDiary.jsp : 일기읽기 페이지
+(8) updateForm.jsp: 일기수정 페이지
+(9) update.jsp: updateForm.jsp의 동작을 위한 페이지
+(10) deleteForm.jsp: 일기삭제 페이지
+(11) delete.jsp: deleteForm.jsp의 동작을 위한 페이지
+(12) login.jsp: 로그인 동작을 위한 페이지

@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>My Little Diary; login</title>
+<title>My Daily Diary; login</title>
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="myDiary.js"></script>
+	<script src="js/myDiary.js"></script>
 </head>
 <body>
 	<section class="vh-100 gradient-custom">
@@ -22,23 +22,25 @@
 
               <h2 class="fw-bold mb-2 text-uppercase">My Daily Diary</h2>
               <p class="text-black-50 mb-5">로그인과 비밀번호를 입력해주세요!</p>
-			  <form action="main.jsp" method="post" id="loginForm">
+              
+			  <form action="controller/login.jsp" method="post" id="loginForm">
 	              <div class="form-outline form-black mb-4">
 	              	<label class="form-label" for="idLabel">아이디</label>
-	                <input type="text" id="id" class="form-control form-control-lg" />
+	                <input type="text" name="id" id="id" class="form-control form-control-lg" />
 	              </div>
 	
 	              <div class="form-outline form-black mb-4">
 	              	<label class="form-label" for="pwLabel">비밀번호</label>
-	                <input type="password" id="pw" class="form-control form-control-lg" />
+	                <input type="password" name="pw" id="pw" class="form-control form-control-lg" />
 	              </div>
 	
-	              <button id="login" name="login" class="btn btn-secondary px-5" type="button">로그인</button>
+	              <button id="login" class="btn btn-secondary px-5" type="button">로그인</button>
 			  </form>
+			  
             </div>
 
             <div>
-              <p class="mb-0">계정이 없으시다면 <a href="view/join.jsp" class="text-black-50 fw-bold">회원가입</a>
+              <p class="mb-0">계정이 없으시다면 <a href="view/joinForm.jsp" class="text-black-50 fw-bold">회원가입</a>
               </p>
             </div>
 
