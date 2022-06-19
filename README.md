@@ -1,4 +1,5 @@
 # My-Daily-Diary(신세계아이앤씨 신입 JSP 교육 과제)
+![image](https://user-images.githubusercontent.com/55080554/174471242-bd1572a4-dc01-4d77-94fc-45bd7627bf16.png)
 
 [ My Daily Diary ]
 <br>오늘 하루의 일기를 트위터 형식으로 작성할 수 있다.
